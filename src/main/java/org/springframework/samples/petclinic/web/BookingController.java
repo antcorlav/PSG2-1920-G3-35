@@ -43,18 +43,18 @@ public class BookingController {
 
 	// Spring MVC calls method loadPetWithBooking(...) before processNewBookingForm is called
 	@PostMapping(value = "/owners/{ownerId}/pets/{petId}/booking/new")
-	public String processNewBookingForm(@Valid final Booking booking, final BindingResult result) {
+	public String processNewBookingForm(@Valid final Booking booking, final BindingResult result, @PathVariable("ownerId") final int ownerId, @PathVariable("petId") final int petId) {
 		if (result.hasErrors()) {
 			return "pets/createOrUpdateBookingForm";
 		} else {
 			this.clinicService.saveBooking(booking);
-			return "redirect:/owners/{ownerId}";
+			return "redirect:/owners/" + ownerId + "/pets/" + petId + "/booking";
 		}
 	}
 
 	@GetMapping(value = "/owners/*/pets/{petId}/booking")
 	public String showBooking(@PathVariable final int petId, final Map<String, Object> model) {
-		model.put("booking", this.clinicService.findPetById(petId).getBooking());
-		return "bookingList";
+		model.put("bookings", this.clinicService.findPetById(petId).getBooking());
+		return "pets/bookingList";
 	}
 }
