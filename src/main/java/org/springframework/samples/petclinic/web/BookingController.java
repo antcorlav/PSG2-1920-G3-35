@@ -38,14 +38,14 @@ public class BookingController {
 	// Spring MVC calls method loadPetWithBooking(...) before initNewBookingForm is called
 	@GetMapping(value = "/owners/*/pets/{petId}/booking/new")
 	public String initNewBookingForm(@PathVariable("petId") final int petId, final Map<String, Object> model) {
-		return "pets/createOrUpdateVisitForm"; //TODO: Cambia la vista correspondiente aqui.
+		return "pets/createOrUpdateBookingForm";
 	}
 
 	// Spring MVC calls method loadPetWithBooking(...) before processNewBookingForm is called
 	@PostMapping(value = "/owners/{ownerId}/pets/{petId}/booking/new")
 	public String processNewBookingForm(@Valid final Booking booking, final BindingResult result) {
 		if (result.hasErrors()) {
-			return "pets/createOrUpdateVisitForm";//TODO: Cambia la vista correspondiente aqui.
+			return "pets/createOrUpdateBookingForm";
 		} else {
 			this.clinicService.saveBooking(booking);
 			return "redirect:/owners/{ownerId}";
