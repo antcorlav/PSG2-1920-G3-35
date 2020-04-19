@@ -74,7 +74,11 @@ CREATE TABLE causa (
 CREATE TABLE donacion (
   id		INTEGER IDENTITY PRIMARY KEY,
   cantidad	INTEGER NOT NULL,
-  causa_id	INTEGER NOT NULL
+  fecha  	DATE,
+  causa_id	INTEGER NOT NULL,
+  owner_id	INTEGER NOT NULL
 ) engine=InnoDB;
 ALTER TABLE donacion ADD CONSTRAINT fk_donacion_causa FOREIGN KEY (causa_id) REFERENCES causa (id);
 CREATE INDEX donacion_causa_id ON donacion (causa_id);
+ALTER TABLE donacion ADD CONSTRAINT fk_donacion_owner FOREIGN KEY (owner_id) REFERENCES owners (id);
+CREATE INDEX donacion_owner_id ON donacion (owner_id);
