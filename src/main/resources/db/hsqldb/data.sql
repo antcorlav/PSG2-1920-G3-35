@@ -52,10 +52,10 @@ INSERT INTO visits VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits VALUES (4, 7, '2013-01-04', 'spayed');
 
-INSERT INTO causa VALUES (1, 'Esto es una descripcion', 'ONG 1', 150, 0, false);
-INSERT INTO causa VALUES (2, 'Esto es una descripcion', 'ONG 1', 150, 0, false);
-INSERT INTO causa VALUES (3, 'Esto es una descripcion', 'ONG 1', 150, 0, false);
+INSERT INTO causa VALUES (1, 'Esto es una descripcion', 'ONG 1', 150, 0, true);
+INSERT INTO causa VALUES (2, 'Esto es una descripcion', 'ONG 1', 150, 0, true);
+INSERT INTO causa VALUES (3, 'Esto es una descripcion', 'ONG 1', 150, 150, false);
 
-INSERT INTO donacion VALUES (1, 5, 1);
-INSERT INTO donacion VALUES (2, 10, 2);
-INSERT INTO donacion VALUES (3, 5, 3);
+INSERT INTO donacion VALUES (1, 5, '2020-04-17', 1, 1);
+INSERT INTO donacion VALUES (2, 10, '2020-04-17', 2, 2);
+INSERT INTO donacion VALUES (3, 5, '2020-04-17', 3, 3);
