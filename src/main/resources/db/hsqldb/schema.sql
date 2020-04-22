@@ -1,3 +1,6 @@
+DROP TABLE donacion IF EXISTS;
+DROP TABLE causa IF EXISTS;
+DROP TABLE booking IF EXISTS;
 DROP TABLE vet_specialties IF EXISTS;
 DROP TABLE vets IF EXISTS;
 DROP TABLE specialties IF EXISTS;
@@ -71,3 +74,24 @@ CREATE TABLE booking (
 );
 ALTER TABLE booking ADD CONSTRAINT fk_booking_pets FOREIGN KEY (pet_id) REFERENCES pets (id);
 CREATE INDEX booking_pet_id ON booking (pet_id);
+
+CREATE TABLE causa (
+  id		INTEGER IDENTITY PRIMARY KEY,
+  description VARCHAR(100),
+  ong 		VARCHAR(30),
+  objetivo	INTEGER NOT NULL,
+  dinero_recaudado INTEGER NOT NULL,
+  valido	BOOLEAN
+);
+
+CREATE TABLE donacion (
+  id		INTEGER IDENTITY PRIMARY KEY,
+  cantidad	INTEGER NOT NULL,
+  fecha  	DATE,
+  causa_id	INTEGER NOT NULL,
+  owner_id	INTEGER NOT NULL
+);
+ALTER TABLE donacion ADD CONSTRAINT fk_donacion_causa FOREIGN KEY (causa_id) REFERENCES causa (id);
+CREATE INDEX donacion_causa_id ON donacion (causa_id);
+ALTER TABLE donacion ADD CONSTRAINT fk_donacion_owner FOREIGN KEY (owner_id) REFERENCES owners (id);
+CREATE INDEX donacion_owner_id ON donacion (owner_id);
