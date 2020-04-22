@@ -109,5 +109,29 @@
 
         </c:forEach>
     </table>
+    <h2>Causas a donar</h2>
+     <table class="table table-striped">
+     	<thead>
+     	<tr>
+           <th>Descripcion</th>
+           <th>Dinero recaudado</th>
+           <th>Objetivo</th>
+       </tr>
+       </thead>
+        <c:forEach var="causa" items="${causas}">
+        	<tr>
+	            <td><spring:url value="/causa/{ownerId}/{causaId}" var="causaUrl">
+                        <spring:param name="causaId" value="${causa.id}"/>
+                        <spring:param name="ownerId" value="${owner.id}"/>
+                    </spring:url>
+                 <a href="${fn:escapeXml(causaUrl)}"><c:out value="${causa.description}"/></a></td>
+	            <td><c:out value="${causa.dineroRecaudado}"/></td>
+	            <td><c:out value="${causa.objetivo}"/></td>
+	        </tr>
+        </c:forEach>
+     </table>
+     <spring:url value="/causa/new" var="createUrl">
+     </spring:url>
+     <a href="${fn:escapeXml(createUrl)}" class="btn btn-default">Create</a>
 
 </petclinic:layout>

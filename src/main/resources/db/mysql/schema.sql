@@ -61,3 +61,24 @@ CREATE TABLE IF NOT EXISTS booking (
   exit_date DATE,
   FOREIGN KEY (pet_id) REFERENCES pets(id)
 ) engine=InnoDB;
+
+CREATE TABLE causa (
+  id		INTEGER IDENTITY PRIMARY KEY,
+  description VARCHAR(100),
+  ong 		VARCHAR(30),
+  objetivo	INTEGER NOT NULL,
+  dinero_recaudado INTEGER NOT NULL,
+  valido	BOOLEAN
+) engine=InnoDB;
+
+CREATE TABLE donacion (
+  id		INTEGER IDENTITY PRIMARY KEY,
+  cantidad	INTEGER NOT NULL,
+  fecha  	DATE,
+  causa_id	INTEGER NOT NULL,
+  owner_id	INTEGER NOT NULL
+) engine=InnoDB;
+ALTER TABLE donacion ADD CONSTRAINT fk_donacion_causa FOREIGN KEY (causa_id) REFERENCES causa (id);
+CREATE INDEX donacion_causa_id ON donacion (causa_id);
+ALTER TABLE donacion ADD CONSTRAINT fk_donacion_owner FOREIGN KEY (owner_id) REFERENCES owners (id);
+CREATE INDEX donacion_owner_id ON donacion (owner_id);
