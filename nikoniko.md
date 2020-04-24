@@ -13,36 +13,36 @@
 
 | Day           | Antonio C.    | Alfonso M.     | Isaac M.       |
 | ------------- | ------------- | -------------  | -------------  |
-| Day 1         |       -       |                |       -        |
-| Day 2         |       -       |                |       -        |
-| Day 3         |       -       |                |       -        |
-| Day 4         |       -       |                |       -        |
-| Day 5         |       -       |                |       -        |
-| Day 6         |       -       |                |       -        |
-| Day 7         |    :smiley:   |                |     :smiley:   |
-| Day 8         |       -       |                |       -        |
-| Day 9         |       -       |                |       -        |
-| Day 10        |       -       |                |       -        |
-| Day 11        |       -       |                |     :smiley:   |
-| Day 12        |       -       |                |       -        |
-| Day 13        |       -       |                |       -        |
-| Day 14        |       -       |                |       -        |
-| Day 15        |    :smiley:   |                |       -        |
-| Day 16        |    :smiley:   |                |       -        |
-| Day 17        |    :smiley:   |                |       -        |
-| Day 18        |    :worried:  |                |     :smiley:   |
-| Day 19        |    :worried:  |                |     :smiley:   |
-| Day 20        |    :worried:  |                |       -        |
-| Day 21        |    :worried:  |                |       -        |
-| Day 22        |    :worried:  |                |     :smiley:   |
-| Day 23        |    :smiley:   |                |     :smiley:   |
-| Day 24        |    :smiley:   |                |     :smiley:   |
-| Day 25        |       -       |                |        -       |
-| Day 26        |       -       |                |        -       |
-| Day 27        |       -       |                |        -       |
-| Day 28        |    :smiley:   |                |        -       |
-| Day 29        |    :smiley:   |                |        -       |
-| Day 30        |    :smiley:   |                |     :smiley:   |
-| Day 31        |    :smiley:   |                |     :smiley:   |
-| Day 32        |    :smiley:   |                |    :worried:   |
-| Day 33        |    :smiley:   |                |    :worried:   |
+| Day 1         |       -       |       -        |       -        |
+| Day 2         |       -       |       -        |       -        |
+| Day 3         |       -       |       -        |       -        |
+| Day 4         |       -       |       -        |       -        |
+| Day 5         |       -       |       -        |       -        |
+| Day 6         |       -       |       -        |       -        |
+| Day 7         |    :smiley:   |    :smiley:    |     :smiley:   |
+| Day 8         |       -       | :neutral_face: |       -        |
+| Day 9         |       -       |       -        |       -        |
+| Day 10        |       -       |       -        |       -        |
+| Day 11        |       -       |       -        |     :smiley:   |
+| Day 12        |       -       |       -        |       -        |
+| Day 13        |       -       |       -        |       -        |
+| Day 14        |       -       |       -        |       -        |
+| Day 15        |    :smiley:   |       -        |       -        |
+| Day 16        |    :smiley:   |       -        |       -        |
+| Day 17        |    :smiley:   |       -        |       -        |
+| Day 18        |    :worried:  |    :worried:   |     :smiley:   |
+| Day 19        |    :worried:  |    :smiley:    |     :smiley:   |
+| Day 20        |    :worried:  |       -        |       -        |
+| Day 21        |    :worried:  |       -        |       -        |
+| Day 22        |    :worried:  |       -        |     :smiley:   |
+| Day 23        |    :smiley:   |       -        |     :smiley:   |
+| Day 24        |    :smiley:   |    :smiley:    |     :smiley:   |
+| Day 25        |       -       |    :smiley:    |        -       |
+| Day 26        |       -       |    :smiley:    |        -       |
+| Day 27        |       -       |    :worried:   |        -       |
+| Day 28        |    :smiley:   |    :smiley:    |        -       |
+| Day 29        |    :smiley:   |    :worried:   |        -       |
+| Day 30        |    :smiley:   |    :worried:   |     :smiley:   |
+| Day 31        |    :smiley:   |    :worried:   |     :smiley:   |
+| Day 32        |    :smiley:   |    :fearful:   |    :worried:   |
+| Day 33        |    :smiley:   |    :smiley:    |    :worried:   |
